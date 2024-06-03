@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images and Picture Examples</title>
+    <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-    
+    <div class="container">
+    <h1>The Picture Element vs The Img Element</h1>
+    <div class="ImageCon">
+     <img src="Images/50_blessings.webp" width="200px" height="200px">
+     <p>This is an Img element it is static and the picture does not change on resize</p>
+     <picture>
+        <source media="(Min-width:700px)" srcset="Images/happy-men-12.png" width="100px" height="100px">
+        <source media="(Min-width:500px)" srcset="Images/pngtree-defeated-businessman-lying-on-white-death-picture-image_13109761.png" width="100px" height="100px" alt="dude">
+        <img src="Images/happy-men-12.png" width="100px" height="100px;">
+     </picture>
+    <p>The above images are an example of a picture element in this type of element the image will change depending on the resolution of the device</p>
+
+    </div>
+    </div>
 </body>
 </html>
